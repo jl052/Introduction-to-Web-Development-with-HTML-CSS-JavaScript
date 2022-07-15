@@ -1,5 +1,16 @@
 function compute()
 {
+    var cornumber = document.getElementById("principal");
+    if(cornumber.value==0){
+        alert("Enter a positive number");
+        cornumber.focus();
+        return;
+    }
+    if(cornumber.value<0){
+        alert("Enter a positive number");
+        cornumber.focus();
+        return;
+    }
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
