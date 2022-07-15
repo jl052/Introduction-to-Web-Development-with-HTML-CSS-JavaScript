@@ -24,18 +24,3 @@ function updateRate()
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval+'%';
 }
-
-function checkdata(){
-    var cornumber = document.getElementById("principal");
-    if(cornumber.value==0){
-        alert("Enter a positive number");
-        cornumber.focus();
-        return True;
-    }
-    if(cornumber.value<0){
-        alert("Enter a positive number");
-        cornumber.focus();
-        return True;
-    }
-    return false;
-}
